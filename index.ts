@@ -1,4 +1,4 @@
-const marcin = { age: 26, name: "Marcin", city: "Poznań" };
+// const marcin = { age: 26, name: "Marcin", city: "Poznań" };
 
 // const displayInfo = (person) => {
 //   //   const age = person.age;
@@ -16,3 +16,11 @@ const displayInfo = ({ age, name, city = "Warszawa" }) => {
 };
 
 displayInfo(marcin);
+
+const marcin = ["Marcin", 26, "Poznań"];
+
+const getPersonInfo = (person) => {
+  return `Imię ${person[0]}, wiek: ${person[1]}, miasto ${person[2]}`;
+};
+
+console.log(getPersonInfo(marcin));
