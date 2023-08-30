@@ -19,14 +19,19 @@ displayInfo(marcin);
 
 const marcin = ["Marcin", 26, "Poznań"];
 
-const getPersonInfo = (person) => {
-  const name = person[0];
-  const age = person[1];
-  const city = person[2];
-
+const getPersonInfo = ([name, , city]) => {
+  //   const name = person[0];
+  //   const age = person[1];
+  //   const city = person[2];
   //   return `Imię ${person[0]}, wiek: ${person[1]}, miasto ${person[2]}`;
+
+  //   const [name, age, city] = person;
 
   return `Imię ${name}, wiek: ${age}, miasto ${city}`;
 };
 
 console.log(getPersonInfo(marcin));
+
+const letters = ["a", "b", "c", "d", "f", "g", "h"];
+
+const [firstLetter, secondLetter, ...otherLetters] = letters;
